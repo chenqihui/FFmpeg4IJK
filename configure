@@ -1724,6 +1724,7 @@ EXTERNAL_LIBRARY_LIST="
     mediacodec
     openal
     opengl
+    libcronet
 "
 
 HWACCEL_AUTODETECT_LIBRARY_LIST="
@@ -3250,6 +3251,7 @@ librtmpte_protocol_deps="librtmp"
 libsmbclient_protocol_deps="libsmbclient gplv3"
 libssh_protocol_deps="libssh"
 libtls_conflict="openssl gnutls"
+libcronet_protocol_deps="libcronet"
 mmsh_protocol_select="http_protocol"
 mmst_protocol_select="network"
 libsrt_protocol_deps="libsrt"

@@ -2057,6 +2057,22 @@ int avformat_network_init(void);
  */
 int avformat_network_deinit(void);
 
+/**
+ * Initialize cronet environment, must be called as early as possible.
+ *
+ * @param dns_config_server Sohu dns config server url.
+ *
+ * @return Error code.
+ */
+int av_format_cronet_init(const char *hosts[], int len);
+
+/**
+ * Uninitialize cronet environment.
+ */
+void av_format_cronet_uninit(void);
+
+char* av_format_cronet_get_current_protocol(void);
+
 #if FF_API_NEXT
 /**
  * If f is NULL, returns the first registered input format,
