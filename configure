@@ -6048,6 +6048,7 @@ enabled libvmaf           && require_pkg_config libvmaf "libvmaf >= 0.6.2" libvm
 enabled libvo_amrwbenc    && require libvo_amrwbenc vo-amrwbenc/enc_if.h E_IF_init -lvo-amrwbenc
 enabled libvorbis         && require_pkg_config libvorbis vorbis vorbis/codec.h vorbis_info_init &&
                              require_pkg_config libvorbisenc vorbisenc vorbis/vorbisenc.h vorbis_encode_init
+enable libcronet          && require libcronet cronet_c.h Cronet_Engine_Create -F Cronet
 
 enabled libvpx            && {
     enabled libvpx_vp8_decoder && {
